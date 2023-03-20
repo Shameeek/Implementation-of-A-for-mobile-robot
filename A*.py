@@ -45,7 +45,7 @@ clearance = int(input("\nEnter the clearance (in mm): "))   ####getting the user
 radius = int(input("\nEnter the robot radius (in mm): "))   ####taking the radius of robot from user
 stepsize = int(input("\nEnter the stepsize (in mm): "))     #### taking the stepsize of robot 
 
-plot_width, plot_height, clearance = 600, 250, radius + clearance         ####goal desired dimensional units of the output image in pixels and set the width, height and clearance                  
+plot_width, plot_height, clearance = 600, 250, radius + clearance         ####goal desired dimensional units of the goal image in pixels and set the width, height and clearance                  
 pixels = np.full((plot_height, plot_width, 3), 255, dtype=np.uint8)       #### give out the plot height plot width, white color, and also dtype 
 
 
