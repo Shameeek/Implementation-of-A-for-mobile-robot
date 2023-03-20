@@ -5,7 +5,7 @@ import math                              #### import libraries which are necessa
 from queue import PriorityQueue
 
 
-def move(node, action, L = 5):      ####function calls the next available node with an action and also specifies the robot orientation 
+def move(node, action, L = 5):      ####function announces the next available node with an action and also specifies the robot orientation 
                                         ##along with the new position of robot
     x, y, theta = node
     theta = math.radians(theta)
