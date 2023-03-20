@@ -132,7 +132,7 @@ def astar(start_node, goal_node):    #### A star algorithm
 
 
 
-def heuristic(node, goal_node):   #### calculates the distance between the given node and goal node
+def heuristic(node, goal_node):   #### calculates the distance between node and goal point
     return abs(goal_node[0] - node[0]) + abs(goal_node[1] - node[1])
 
 
