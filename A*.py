@@ -115,9 +115,9 @@ def astar(start_node, goal_node):    #### A star algorithm
         for action in [-60, -30, 0, 30, 60]:
             new_node, move_cost = move(current_node, action, stepsize)      ### calculating the new and unexplored nodes along with the cost
 
-            if is_valid_node(new_node) and new_node not in closed_list:               ### adding the current cost to move cost
+            if is_valid_node(new_node) and new_node not in closed_list:               ### adding the current existing cost to move cost
                 new_cost_to_come = cost_to_come[current_node] + move_cost
-                new_cost = new_cost_to_come + 5 * heuristic(new_node, goal_node)     ####The function modifies the cost to come, cost, and value variables if the current cost to come is less than the previous cost to come.
+                new_cost = new_cost_to_come + 5 * heuristic(new_node, goal_node)     ####The function enhances the cost to come, cost, and value variables if the current cost to come is less than the previous cost to come.
 
                 if new_node not in cost_to_come or new_cost_to_come < cost_to_come[new_node]:
                     cost_to_come[new_node] = new_cost_to_come
